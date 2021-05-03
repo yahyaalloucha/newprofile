@@ -1,0 +1,30 @@
+.container {
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.navlinks {
+  display: flex;
+}
+.link {
+  display: flex;
+}
+.link {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.mylogo {
+  width: 5vw;
+  height: 5vw;
+}
+.button {
+  color: #ffffff;
+  padding-left: -3vw;
+}
+.darkmode {
+  width: 2vw;
+  height: 2vw;
+}
