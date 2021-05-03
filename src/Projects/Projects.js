@@ -15,13 +15,14 @@ class Projects extends Component {
     } = this.props;
     return (
       <div className={Styles.container}>
+        <div className={Styles.divimage}>
+          <img src={img} alt="text" className={Styles.projimg} />
+        </div>
         <div className={Styles.text}>
           <h1 className={Styles.h1}>{title}</h1>
           <p className={Styles.p}>{description}</p>
           <a href={link}>{atext}</a>
-          <div className={Styles.divimage}>
-            <img src={img} alt="text" className={Styles.projimg} />
-          </div>
+
           {buttonText != null && buttonText != "" ? (
             <a className={Styles.button} href={buttonUrl}>
               {buttonText}

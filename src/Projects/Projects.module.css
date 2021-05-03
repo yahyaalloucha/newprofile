@@ -1,18 +1,18 @@
 .container {
   display: flex;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: row !important;
   padding-top: 50px;
 }
 .projimg {
   height: 315px;
   width: 480px;
-  padding-top: 190px;
-  padding-left: 220px;
+  padding-top: 50px;
+  padding-left: 13vw;
 }
 .text {
-  padding-left: 200px;
-  width: 555px;
+  padding-left: 10vw;
+  width: 30vw;
 
   padding-top: 100px;
 }
@@ -30,4 +30,7 @@
   font-size: 16px;
   line-height: 26px;
   color: #6f7cb2;
+}
+.button {
+  margin-left: 2vw;
 }

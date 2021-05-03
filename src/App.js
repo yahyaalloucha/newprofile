@@ -7,6 +7,9 @@ import lastproj from "./lastproj.jpg";
 import corona from "./coronastat.png";
 import Header from "./Header/Header";
 import Header_content from "./Header_content/Header_content";
+import Whatido from "./Whatido/Whatido";
+import Aboutme from "./Aboutme/Aboutme";
+import Footer from "./Footer/Footer";
 import devimg from "./devimg.jpg";
 class App extends Component {
   render() {
@@ -53,6 +56,7 @@ class App extends Component {
           <Header />
           <Header_content />
         </div>
+        <Whatido />
         <Projects
           img={Proj.imgUrl}
           title={Proj.title}
@@ -73,7 +77,11 @@ class App extends Component {
           description={Proj2.description}
           atext={Proj2.atext}
           link={Proj2.link}
+          buttonText={Proj2.buttonText}
+          buttonUrl={Proj2.buttonUrl}
         />
+        <Aboutme />
+        <Footer />
       </div>
     );
   }

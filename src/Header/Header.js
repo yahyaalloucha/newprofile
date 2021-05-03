@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import Styles from "./Header.module.css";
-import mylogo from "../mylogoy.png";
+import mylogo from "../yaya.jpg";
 import darkmode from "../darkicon.png";
 
 class Header extends Component {

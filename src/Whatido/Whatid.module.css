@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.titlecontainer {
+  padding-top: 100px;
+  padding-left: 190px;
+}
+.h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+}
+.p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  width: 540px;
+}
+.elementscard {
+  display: flex;
+  padding-top: 80px;
+  padding-right: 30px;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.p1 {
+  width: 255px;
+}
+.image {
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+@media (max-width: 1300px) {
+  .titlecontainer {
+    padding-top: 50px;
+    padding-left: 90px;
+  }
+  .image {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 1300px) {
+  .image {
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  .titlecontainer {
+    padding-top: 100px;
+    padding-left: 150px;
+  }
+}
+@media (max-width: 700px) {
+  .titlecontainer {
+    padding-left: 50px;
+  }
+  .p {
+    width: 90%;
+    height: 100%;
+  }
+  .elementscard {
+    display: flex;
+    padding-top: 80px;
+    padding-right: 60px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 620px) {
+  .p {
+    width: 70%;
+    height: 100%;
+  }
+  .elementscard {
+    display: flex;
+    padding-top: 80px;
+    padding-right: 30px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 570px) {
+  .elementscard {
+    display: flex;
+    padding-top: 80px;
+    padding-left: 50px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
