@@ -34,3 +34,60 @@
 .button {
   margin-left: 2vw;
 }
+@media (max-width: 1300px) {
+  .projimg {
+    height: 315px;
+    width: 480px;
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+  .text {
+    padding-left: 50px;
+    width: 555px;
+
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .projimg {
+    height: 315px;
+    width: 480px;
+  }
+  .text {
+    width: 40%;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 850px) {
+  .projimg {
+    height: 315px;
+    width: 380px;
+  }
+  .text {
+    width: 40%;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column !important;
+  }
+  .projimg {
+    padding-left: 50px;
+    height: 100%;
+    width: 80%;
+  }
+  .h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+  }
+  .text {
+    padding-left: 50px !important;
+    width: 80%;
+
+    padding-top: 100px;
+  }
+}

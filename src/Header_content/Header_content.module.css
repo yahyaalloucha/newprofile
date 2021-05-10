@@ -6,9 +6,8 @@
 .img {
   display: flex;
   align-self: center;
-  height: 30%;
-  width: 30%;
-  padding-left: 20%;
+
+  padding-left: 10%;
   padding-top: 10vw;
 }
 .container {
@@ -71,4 +70,29 @@
   color: #091133;
   border: 2px solid #091133;
   box-sizing: border-box;
+}
+@media (max-width: 1100px) {
+  .img {
+    display: none;
+  }
+  .container {
+    padding-left: 150px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .button2 {
+    margin-left: 0px;
+    margin-top: 2vw;
+  }
+  .text {
+  }
 }

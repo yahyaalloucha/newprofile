@@ -9,6 +9,9 @@
 .navlinks {
   display: flex;
 }
+.nav {
+  display: none !important;
+}
 .links {
   display: flex;
 }
@@ -20,8 +23,8 @@
 }
 .mylogo {
   padding-top: 2vw;
-  width: 5vw;
-  height: 5vw;
+  width: 100px;
+  height: 100px;
 }
 .button {
   color: #ffffff;
@@ -30,4 +33,49 @@
 .darkmode {
   width: 2vw;
   height: 2vw;
+}
+@media (max-width: 700px) {
+  .nav {
+    display: flex !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start;
+    justify-content: space-around !important;
+    width: 100vw;
+    background-color: brown;
+  }
+  .mylogo {
+    display: flex;
+    padding-top: 0vw;
+    height: 50px;
+    width: 70px;
+    margin-right: 40vw;
+  }
+  .container {
+    display: none;
+  }
+  .navlinks {
+    display: flex;
+    align-items: center !important;
+    padding-right: 5vw;
+
+    flex-direction: column;
+  }
+  .link {
+    display: flex;
+
+    text-align: center !important;
+    margin-left: 0%;
+    align-self: flex-start;
+  }
+
+  .button {
+    background-color: transparent;
+    color: blue;
+    padding: 0px;
+    font-size: 15px;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 50%;
+  }
 }

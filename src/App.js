@@ -60,9 +60,9 @@ class App extends Component {
                 }}
               >
                 <Header />
-
                 <Header_content />
               </div>
+
               <Whatido />
               <Projects
                 img={Proj.imgUrl}

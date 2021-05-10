@@ -27,8 +27,8 @@
   align-self: center;
 }
 .img1 {
-  width: 5vw;
-  height: 5vw;
+  height: 40px;
+  width: 40px;
 }
 .button {
   width: 109px;
@@ -128,5 +128,12 @@
   .img {
     align-items: center;
     margin-left: 5vw !important;
+  }
+  .img1 {
+    height: 40px;
+    width: 40px;
+  }
+  .button {
+    margin-top: 1vw;
   }
 }
