@@ -17,7 +17,14 @@
   flex-direction: column;
   padding-left: 150px;
 }
-
+.a1 {
+  text-decoration: none;
+  color: #ffffff;
+}
+.a2 {
+  text-decoration: none;
+  color: #505f98;
+}
 .h1 {
   font-family: Roboto;
   font-style: normal;

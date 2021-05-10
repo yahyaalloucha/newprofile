@@ -9,12 +9,14 @@
 .navlinks {
   display: flex;
 }
-.link {
+.links {
   display: flex;
 }
-.link {
+.links {
   margin-left: 3vw;
   margin-right: 3vw;
+  color: #007bff;
+  text-decoration: none;
 }
 .mylogo {
   padding-top: 2vw;

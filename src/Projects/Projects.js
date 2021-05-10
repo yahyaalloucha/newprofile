@@ -9,19 +9,19 @@ class Projects extends Component {
       title,
       description,
       atext,
-      link,
+      linke,
       buttonText,
       buttonUrl,
     } = this.props;
     return (
-      <div className={Styles.container}>
+      <div className={Styles.container} id="MYWORK">
         <div className={Styles.divimage}>
           <img src={img} alt="text" className={Styles.projimg} />
         </div>
         <div className={Styles.text}>
           <h1 className={Styles.h1}>{title}</h1>
           <p className={Styles.p}>{description}</p>
-          <a href={link}>{atext}</a>
+          <a href={linke}>{atext}</a>
 
           {buttonText != null && buttonText != "" ? (
             <a className={Styles.button} href={buttonUrl}>

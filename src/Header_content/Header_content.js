@@ -2,11 +2,12 @@ import React from "react";
 import { Component } from "react";
 import styles from "./Header_content.module.css";
 import Softoware from "./Softoware.png";
+import { HashLink } from "react-router-hash-link";
 
 class Header_content extends Component {
   render() {
     return (
-      <div className={styles.firstcontainer}>
+      <div className={styles.firstcontainer} id="Home">
         <div className={styles.container}>
           <div className={styles.title}>
             <h1 className={styles.h1}>
@@ -25,8 +26,16 @@ class Header_content extends Component {
             </p>
           </div>
           <div className={styles.buttons}>
-            <div className={styles.button1}>My Work</div>
-            <div className={styles.button2}>Let's Talk</div>
+            <div className={styles.button1}>
+              <HashLink smooth to="/#MYWORK" className={styles.a1}>
+                My Work
+              </HashLink>
+            </div>
+            <div className={styles.button2}>
+              <a href="#LET'S TALK" className={styles.a2}>
+                Let's Talk
+              </a>
+            </div>
           </div>
         </div>
         <img src={Softoware} className={styles.img}></img>

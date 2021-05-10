@@ -6,6 +6,7 @@ class Aboutme extends Component {
   render() {
     return (
       <div
+        id="About"
         className={Styles.container}
         style={{
           backgroundImage: "url('./bgabout.svg')",

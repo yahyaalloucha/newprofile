@@ -3,6 +3,8 @@ import { Component } from "react";
 import Styles from "./Header.module.css";
 import mylogo from "../yaya.jpg";
 import darkmode from "../darkicon.png";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 class Header extends Component {
   render() {
@@ -12,11 +14,17 @@ class Header extends Component {
           <img src={mylogo} className={Styles.mylogo}></img>
         </div>
         <div className={Styles.navlinks}>
-          <a className={Styles.link}>Home</a>
+          <HashLink smooth to="/#Home" className={Styles.links}>
+            Home
+          </HashLink>
 
-          <a className={Styles.link}>About</a>
+          <HashLink smooth to="#About" className={Styles.links}>
+            About
+          </HashLink>
 
-          <a className={Styles.link}>Contact</a>
+          <Link smooth to="/Contact" className={Styles.links}>
+            Contact
+          </Link>
         </div>
 
         <button className={Styles.button}>

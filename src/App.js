@@ -10,7 +10,10 @@ import Header_content from "./Header_content/Header_content";
 import Whatido from "./Whatido/Whatido";
 import Aboutme from "./Aboutme/Aboutme";
 import Footer from "./Footer/Footer";
+import Contact from "./Contact/Contact";
 import devimg from "./devimg.jpg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 class App extends Component {
   render() {
     const Proj = {
@@ -27,7 +30,7 @@ class App extends Component {
       description:
         "Website using this web site, you can get the last statistics about COVID 19.I built this project with React js.See project Statistics of COV19.",
       atext: "Visit Statistics of COV19",
-      link: "https://gracious-jepsen-0f8026.netlify.app/",
+      linke: "https://gracious-jepsen-0f8026.netlify.app/",
     };
 
     const Proj2 = {
@@ -36,53 +39,67 @@ class App extends Component {
       description:
         "Landie it's a website to buy a product, I worked on this project with technologies react js, react-bootstrap, and Figma.",
       atext: "Visit Landie",
-      link: "https://flamboyant-almeida-af0295.netlify.app/",
+      linke: "https://flamboyant-almeida-af0295.netlify.app/",
       buttonText: "go to mygithub",
       buttonUrl: "https://github.com/yahyaalloucha/",
     };
     return (
-      <div className="container-app">
-        <div
-          className="divbg"
-          style={{
-            backgroundImage: "url('/Path.svg')",
-            backgroundRepeat: "no-repeat",
-            minHeight: "100vh",
-            minWidth: "100vw",
-            backgroundPosition: "top right",
-            backgroundSize: "contain",
-          }}
-        >
-          <Header />
-          <Header_content />
+      <Router>
+        <div className="container-app">
+          <switch>
+            <Route exact path="/">
+              <div
+                className="divbg"
+                style={{
+                  backgroundImage: "url('/Path.svg')",
+                  backgroundRepeat: "no-repeat",
+                  minHeight: "100vh",
+                  minWidth: "100vw",
+                  backgroundPosition: "top right",
+                  backgroundSize: "contain",
+                }}
+              >
+                <Header />
+
+                <Header_content />
+              </div>
+              <Whatido />
+              <Projects
+                img={Proj.imgUrl}
+                title={Proj.title}
+                description={Proj.description}
+                atext={Proj.atext}
+                link={Proj.linke}
+              />
+              <Projects
+                img={Proj1.imgUrl}
+                title={Proj1.title}
+                description={Proj1.description}
+                atext={Proj1.atext}
+                link={Proj1.linke}
+              />
+              <Projects
+                img={Proj2.imgUrl}
+                title={Proj2.title}
+                description={Proj2.description}
+                atext={Proj2.atext}
+                link={Proj2.linke}
+                buttonText={Proj2.buttonText}
+                buttonUrl={Proj2.buttonUrl}
+              />
+
+              <Aboutme />
+
+              <Footer />
+            </Route>
+            <Switch>
+              <Route exact path="/Contact">
+                <Contact />
+              </Route>
+            </Switch>
+          </switch>
         </div>
-        <Whatido />
-        <Projects
-          img={Proj.imgUrl}
-          title={Proj.title}
-          description={Proj.description}
-          atext={Proj.atext}
-          link={Proj.link}
-        />
-        <Projects
-          img={Proj1.imgUrl}
-          title={Proj1.title}
-          description={Proj1.description}
-          atext={Proj1.atext}
-          link={Proj1.link}
-        />
-        <Projects
-          img={Proj2.imgUrl}
-          title={Proj2.title}
-          description={Proj2.description}
-          atext={Proj2.atext}
-          link={Proj2.link}
-          buttonText={Proj2.buttonText}
-          buttonUrl={Proj2.buttonUrl}
-        />
-        <Aboutme />
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }
