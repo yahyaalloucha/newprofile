@@ -12,7 +12,7 @@ import Aboutme from "./Aboutme/Aboutme";
 import Footer from "./Footer/Footer";
 import Contact from "./Contact/Contact";
 import devimg from "./devimg.jpg";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 class App extends Component {
   render() {

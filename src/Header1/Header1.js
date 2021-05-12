@@ -17,9 +17,9 @@ class Header extends Component {
             <img src={mylogo} className={Styles.mylogo}></img>
           </div>
           <div className={Styles.navlinks}>
-            <HashLink smooth to="/#Home" className={Styles.links}>
+            <Link smooth to="/" className={Styles.links}>
               Home
-            </HashLink>
+            </Link>
 
             <HashLink smooth to="/#Aboutid" className={Styles.links}>
               About
@@ -44,7 +44,7 @@ class Header extends Component {
                 Home
               </HashLink>
 
-              <HashLink smooth to="#About" className={Styles.links}>
+              <HashLink smooth to="/#About" className={Styles.links}>
                 About
               </HashLink>
 

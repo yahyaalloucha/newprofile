@@ -1,12 +1,20 @@
+import { Alert } from "bootstrap";
 import React from "react";
 import { Component } from "react";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Contact from "../Contact/Contact";
+
 import Styles from "./Aboutme.module.css";
 
 class Aboutme extends Component {
+  ClickHandler() {
+    <Contact />;
+  }
   render() {
     return (
       <div
-        id="About"
+        id="Aboutid"
         className={Styles.container}
         style={{
           backgroundImage: "url('./bgabout.svg')",
@@ -28,7 +36,9 @@ class Aboutme extends Component {
         </div>
         <div className={Styles.buttconatiner}>
           <p className={Styles.p2}>I'm waiting </p>
-          <div className={Styles.button}>Contact Now</div>
+          <Link smooth to="/Contact" className={Styles.Linkr}>
+            <div className={Styles.button}>Contact Now</div>
+          </Link>
         </div>
       </div>
     );

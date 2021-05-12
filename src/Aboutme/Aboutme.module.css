@@ -82,6 +82,9 @@
   color: #ffffff;
   margin-bottom: 170px;
 }
+.Linkr {
+  text-decoration: none;
+}
 @media (max-width: 600px) {
   .p {
     width: 50%;

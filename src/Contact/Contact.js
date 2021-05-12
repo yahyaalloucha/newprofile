@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import Haeder from "../Header/Header";
+import Header from "../Header/Header";
 import Styles from "./Contact.module.css";
 import facebook from "./facebookda.svg";
 import instagram from "./instada.svg";
@@ -11,7 +11,7 @@ class Contact extends Component {
   render() {
     return (
       <div className={Styles.container}>
-        <Haeder />
+        <Header />
         <div className={Styles.containertow}>
           <div className={Styles.container_1}>
             <h1 className={Styles.just}>Just say hi.</h1>
