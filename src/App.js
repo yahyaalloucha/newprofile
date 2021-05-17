@@ -13,8 +13,17 @@ import Footer from "./Footer/Footer";
 import Contact from "./Contact/Contact";
 import devimg from "./devimg.jpg";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import CONTEX from "./CONTEX/CONTEX";
 
 class App extends Component {
+  state = {
+    theme: "light",
+  };
+  onChangeTheme = () => {
+    this.setState({
+      theme: this.state.theme === "dark" ? "light" : "dark",
+    });
+  };
   render() {
     const Proj = {
       imgUrl: lastproj,
@@ -45,59 +54,71 @@ class App extends Component {
     };
     return (
       <Router>
-        <div className="container-app">
-          <switch>
-            <Route exact path="/">
-              <div
-                className="divbg"
-                style={{
-                  backgroundImage: "url('/Path.svg')",
-                  backgroundRepeat: "no-repeat",
-                  minHeight: "100vh",
-                  minWidth: "100vw",
-                  backgroundPosition: "top right",
-                  backgroundSize: "contain",
-                }}
-              >
-                <Header />
-                <Header_content />
-              </div>
+        <div
+          className="container-app"
+          style={{
+            backgroundColor: this.state.theme == "dark" ? "black" : "white",
+          }}
+        >
+          <CONTEX.Provider
+            value={{
+              theme: this.state.theme,
+              onChangeTheme: this.onChangeTheme,
+            }}
+          >
+            <switch>
+              <Route exact path="/">
+                <div
+                  className="divbg"
+                  style={{
+                    backgroundImage: "url('/Path.svg')",
+                    backgroundRepeat: "no-repeat",
+                    minHeight: "100vh",
+                    minWidth: "100vw",
+                    backgroundPosition: "top right",
+                    backgroundSize: "contain",
+                  }}
+                >
+                  <Header />
+                  <Header_content />
+                </div>
 
-              <Whatido />
-              <Projects
-                img={Proj.imgUrl}
-                title={Proj.title}
-                description={Proj.description}
-                atext={Proj.atext}
-                link={Proj.linke}
-              />
-              <Projects
-                img={Proj1.imgUrl}
-                title={Proj1.title}
-                description={Proj1.description}
-                atext={Proj1.atext}
-                link={Proj1.linke}
-              />
-              <Projects
-                img={Proj2.imgUrl}
-                title={Proj2.title}
-                description={Proj2.description}
-                atext={Proj2.atext}
-                link={Proj2.linke}
-                buttonText={Proj2.buttonText}
-                buttonUrl={Proj2.buttonUrl}
-              />
+                <Whatido />
+                <Projects
+                  img={Proj.imgUrl}
+                  title={Proj.title}
+                  description={Proj.description}
+                  atext={Proj.atext}
+                  link={Proj.linke}
+                />
+                <Projects
+                  img={Proj1.imgUrl}
+                  title={Proj1.title}
+                  description={Proj1.description}
+                  atext={Proj1.atext}
+                  link={Proj1.linke}
+                />
+                <Projects
+                  img={Proj2.imgUrl}
+                  title={Proj2.title}
+                  description={Proj2.description}
+                  atext={Proj2.atext}
+                  link={Proj2.linke}
+                  buttonText={Proj2.buttonText}
+                  buttonUrl={Proj2.buttonUrl}
+                />
 
-              <Aboutme />
+                <Aboutme />
 
-              <Footer />
-            </Route>
-            <Switch>
-              <Route exact path="/Contact">
-                <Contact />
+                <Footer />
               </Route>
-            </Switch>
-          </switch>
+              <Switch>
+                <Route exact path="/Contact">
+                  <Contact />
+                </Route>
+              </Switch>
+            </switch>
+          </CONTEX.Provider>
         </div>
       </Router>
     );

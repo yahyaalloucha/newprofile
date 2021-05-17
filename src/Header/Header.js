@@ -7,57 +7,77 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
+import CONTEX from "../CONTEX/CONTEX";
 
 class Header extends Component {
   render() {
     return (
       <div>
-        <div className={Styles.container}>
-          <div className={Styles.logo}>
-            <img src={mylogo} className={Styles.mylogo}></img>
-          </div>
-          <div className={Styles.navlinks}>
-            <HashLink smooth to="/#Home" className={Styles.links}>
-              Home
-            </HashLink>
+        <CONTEX.Consumer>
+          {({ theme, onChangeTheme }) => (
+            <div className={Styles.container}>
+              <div className={Styles.logo}>
+                <img src={mylogo} className={Styles.mylogo}></img>
+              </div>
+              <div className={Styles.navlinks}>
+                <HashLink smooth to="/#Home" className={Styles.links}>
+                  Home
+                </HashLink>
 
-            <HashLink smooth to="/#Aboutid" className={Styles.links}>
-              About
-            </HashLink>
+                <HashLink smooth to="/#Aboutid" className={Styles.links}>
+                  About
+                </HashLink>
 
-            <Link smooth to="/Contact" className={Styles.links}>
-              Contact
-            </Link>
-          </div>
+                <Link smooth to="/Contact" className={Styles.links}>
+                  Contact
+                </Link>
+              </div>
 
-          <div className={Styles.button}>
-            <img src={darkmode} className={Styles.darkmode} />
-          </div>
-        </div>
-        <Navbar expand="lg" className={Styles.nav}>
-          <img src={mylogo} className={Styles.mylogo}></img>
-
-          <Navbar.Toggle aria-controls="basic-navbar-nav" className="colla" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <div className={Styles.navlinks}>
-              <HashLink smooth to="/#Home" className={Styles.links}>
-                Home
-              </HashLink>
-
-              <HashLink smooth to="#About" className={Styles.links}>
-                About
-              </HashLink>
-
-              <Link smooth to="/Contact" className={Styles.links}>
-                Contact
-              </Link>
+              <div className={Styles.button}>
+                <img
+                  src={darkmode}
+                  className={Styles.darkmode}
+                  onClick={() => onChangeTheme()}
+                />
+              </div>
             </div>
+          )}
+        </CONTEX.Consumer>
+        <CONTEX.Consumer>
+          {({ theme, onChangeTheme }) => (
+            <Navbar expand="lg" className={Styles.nav}>
+              <img src={mylogo} className={Styles.mylogo}></img>
 
-            <div className={Styles.button}>
-              <img src={darkmode} className={Styles.darkmode} />
-            </div>
-          </Navbar.Collapse>
-        </Navbar>
+              <Navbar.Toggle
+                aria-controls="basic-navbar-nav"
+                className="colla"
+              />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <div className={Styles.navlinks}>
+                  <HashLink smooth to="/#Home" className={Styles.links}>
+                    Home
+                  </HashLink>
+
+                  <HashLink smooth to="#About" className={Styles.links}>
+                    About
+                  </HashLink>
+
+                  <Link smooth to="/Contact" className={Styles.links}>
+                    Contact
+                  </Link>
+                </div>
+
+                <div className={Styles.button}>
+                  <img
+                    src={darkmode}
+                    className={Styles.darkmode}
+                    onClick={() => onChangeTheme()}
+                  />
+                </div>
+              </Navbar.Collapse>
+            </Navbar>
+          )}
+        </CONTEX.Consumer>
       </div>
     );
   }
