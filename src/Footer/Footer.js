@@ -33,19 +33,19 @@ class Footer extends Component {
               <div className={Styles.Lastmenu}>
                 <a
                   className={Styles.a}
-                  style={{ color: theme == "dark" ? "white" : "" }}
+                  style={{ color: theme === "dark" ? "white" : "" }}
                 >
                   Home
                 </a>
                 <a
                   className={Styles.a}
-                  style={{ color: theme == "dark" ? "white" : "" }}
+                  style={{ color: theme === "dark" ? "white" : "" }}
                 >
                   About
                 </a>
                 <a
                   className={Styles.a}
-                  style={{ color: theme == "dark" ? "white" : "" }}
+                  style={{ color: theme === "dark" ? "white" : "" }}
                 >
                   Contact
                 </a>

@@ -1,8 +1,7 @@
-import { Alert } from "bootstrap";
 import React from "react";
 import { Component } from "react";
-import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
+import { BrowserRouter as Link } from "react-router-dom";
 import Contact from "../Contact/Contact";
 
 import Styles from "./Aboutme.module.css";
@@ -21,13 +20,13 @@ class Aboutme extends Component {
             className={Styles.container}
             style={{
               backgroundImage:
-                theme == "light" ? "url('./bgabout.svg')" : "none",
+                theme === "light" ? "url('./bgabout.svg')" : "none",
             }}
           >
             <div className={Styles.text}>
               <h1
                 className={Styles.tit}
-                style={{ color: theme == "dark" ? "white" : "" }}
+                style={{ color: theme === "dark" ? "white" : "" }}
               >
                 About me
               </h1>
@@ -46,7 +45,7 @@ class Aboutme extends Component {
             <div className={Styles.buttconatiner}>
               <p
                 className={Styles.p2}
-                style={{ color: theme == "dark" ? "white" : "" }}
+                style={{ color: theme === "dark" ? "white" : "" }}
               >
                 I'm waiting{" "}
               </p>

@@ -11,8 +11,8 @@ import Whatido from "./Whatido/Whatido";
 import Aboutme from "./Aboutme/Aboutme";
 import Footer from "./Footer/Footer";
 import Contact from "./Contact/Contact";
-import devimg from "./devimg.jpg";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CONTEX from "./CONTEX/CONTEX";
 
 class App extends Component {
@@ -57,7 +57,7 @@ class App extends Component {
         <div
           className="container-app"
           style={{
-            backgroundColor: this.state.theme == "dark" ? "black" : "white",
+            backgroundColor: this.state.theme === "dark" ? "black" : "white",
           }}
         >
           <CONTEX.Provider

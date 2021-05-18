@@ -12,25 +12,39 @@ class Contact extends Component {
   render() {
     return (
       <CONTEX.Consumer>
-        {({ theme, onChangeTheme }) => (
+        {({ theme }) => (
           <div
             className={Styles.container}
-            style={{ backgroundColor: theme == "dark" ? "black" : "white" }}
+            style={{ backgroundColor: theme === "dark" ? "black" : "white" }}
           >
             <Header />
             <div className={Styles.containertow}>
               <div className={Styles.container_1}>
-                <h1 className={Styles.just}>Just say hi.</h1>
+                <h1
+                  className={Styles.just}
+                  style={{ color: theme === "dark" ? "white" : "" }}
+                >
+                  Just say hi.
+                </h1>
 
                 <div className="containertext">
-                  <p>
+                  <p style={{ color: theme === "dark" ? "white" : "" }}>
                     I am always open to discuss your project, improve your
                     online presence or help with your UX/UI design challenges.
                   </p>
                 </div>
-                <div className={Styles.subtextcontact}>Email me at</div>
+                <div
+                  className={Styles.subtextcontact}
+                  style={{ color: theme === "dark" ? "white" : "" }}
+                >
+                  Email me at
+                </div>
                 <div className={Styles.emaillinkcontainer}>
-                  <a href="" className={Styles.emaillink}>
+                  <a
+                    href="hjhj"
+                    className={Styles.emaillink}
+                    style={{ color: theme === "dark" ? "white" : "" }}
+                  >
                     yahyaalloucha01@gmail.com
                   </a>
                 </div>
@@ -55,7 +69,7 @@ class Contact extends Component {
                         className={Styles.instagram}
                       />
                     </a>
-                    <a href="" className={Styles.aa}>
+                    <a href="klkjg" className={Styles.aa}>
                       <img
                         src={linked}
                         alt="linkedin "
@@ -79,7 +93,12 @@ class Contact extends Component {
                   className={Styles.pageclip_form_frm}
                   method="post"
                 >
-                  <h2 className="form-heading-tablet">Or use the form below</h2>
+                  <h2
+                    className="form-heading-tablet"
+                    style={{ color: theme === "dark" ? "white" : "" }}
+                  >
+                    Or use the form below
+                  </h2>
 
                   <div className="divinp">
                     <input

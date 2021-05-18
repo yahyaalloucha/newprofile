@@ -2,13 +2,13 @@ import React from "react";
 import { Component } from "react";
 import Styles from "./Header.module.css";
 import mylogo from "../yaya.jpg";
-import darkmode from "../darkicon.png";
+
 import { FiSun } from "react-icons/fi";
 import { BsMoon } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import CONTEX from "../CONTEX/CONTEX";
 
 class Header extends Component {

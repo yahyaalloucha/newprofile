@@ -4,6 +4,7 @@ import styles from "./Header_content.module.css";
 import Softoware from "./Softoware.png";
 import { HashLink } from "react-router-hash-link";
 import CONTEX from "../CONTEX/CONTEX";
+import { Link } from "react-router-dom";
 
 class Header_content extends Component {
   render() {
@@ -39,9 +40,9 @@ class Header_content extends Component {
                   </HashLink>
                 </div>
                 <div className={styles.button2}>
-                  <a href="#LET'S TALK" className={styles.a2}>
+                  <Link smooth to="/Contact" className={styles.a2}>
                     Let's Talk
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
