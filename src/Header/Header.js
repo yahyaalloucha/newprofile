@@ -3,6 +3,8 @@ import { Component } from "react";
 import Styles from "./Header.module.css";
 import mylogo from "../yaya.jpg";
 import darkmode from "../darkicon.png";
+import { FiSun } from "react-icons/fi";
+import { BsMoon } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -34,11 +36,18 @@ class Header extends Component {
               </div>
 
               <div className={Styles.button}>
-                <img
-                  src={darkmode}
-                  className={Styles.darkmode}
-                  onClick={() => onChangeTheme()}
-                />
+                {theme == "dark" ? (
+                  <FiSun
+                    className={Styles.darkmode}
+                    onClick={() => onChangeTheme()}
+                  />
+                ) : (
+                  <BsMoon
+                    className={Styles.darkmode}
+                    style={{ color: "black" }}
+                    onClick={() => onChangeTheme()}
+                  />
+                )}
               </div>
             </div>
           )}
@@ -68,11 +77,18 @@ class Header extends Component {
                 </div>
 
                 <div className={Styles.button}>
-                  <img
-                    src={darkmode}
-                    className={Styles.darkmode}
-                    onClick={() => onChangeTheme()}
-                  />
+                  {theme == "dark" ? (
+                    <FiSun
+                      className={Styles.darkmode}
+                      onClick={() => onChangeTheme()}
+                    />
+                  ) : (
+                    <BsMoon
+                      className={Styles.darkmode}
+                      style={{ color: "black" }}
+                      onClick={() => onChangeTheme()}
+                    />
+                  )}
                 </div>
               </Navbar.Collapse>
             </Navbar>
