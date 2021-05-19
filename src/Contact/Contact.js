@@ -89,8 +89,8 @@ class Contact extends Component {
 
               <div className={Styles.inpu} id="contactid">
                 <form
-                  action="https://send.pageclip.co/fq3XsvzFs64kc4out7Fv8SlF9GKPZy5i"
-                  className={Styles.pageclip_form_frm}
+                  action="https://send.pageclip.co/fq3XsvzFs64kc4out7Fv8SlF9GKPZy5i/yahyaprofile"
+                  class="pageclip-form"
                   method="post"
                 >
                   <h2
@@ -147,7 +147,11 @@ class Contact extends Component {
                       spellCheck="false"
                     ></textarea>
                   </div>
-                  <div className={Styles.divbutt}>
+                  <div
+                    className={Styles.divbutt}
+                    type="submit"
+                    class="pageclip-form__submit"
+                  >
                     <button className={Styles.butt}>Get In Touch</button>
                   </div>
                 </form>
