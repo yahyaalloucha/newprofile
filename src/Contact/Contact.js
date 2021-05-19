@@ -147,12 +147,10 @@ class Contact extends Component {
                       spellCheck="false"
                     ></textarea>
                   </div>
-                  <div
-                    className={Styles.divbutt}
-                    type="submit"
-                    class="pageclip-form__submit"
-                  >
-                    <button className={Styles.butt}>Get In Touch</button>
+                  <div className={Styles.divbutt} type="submit">
+                    <button className={Styles.butt} type="submit">
+                      Get In Touch
+                    </button>
                   </div>
                 </form>
               </div>
