@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Contact from "../Contact/Contact";
 
 import Styles from "./Aboutme.module.css";
