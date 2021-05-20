@@ -69,7 +69,10 @@ class Contact extends Component {
                         className={Styles.instagram}
                       />
                     </a>
-                    <a href="klkjg" className={Styles.aa}>
+                    <a
+                      href="https://www.linkedin.com/in/yahya-alloucha-6016a7198/"
+                      className={Styles.aa}
+                    >
                       <img
                         src={linked}
                         alt="linkedin "
@@ -147,11 +150,10 @@ class Contact extends Component {
                       spellCheck="false"
                     ></textarea>
                   </div>
-                  <div className={Styles.divbutt} type="submit">
-                    <button className={Styles.butt} type="submit">
-                      Get In Touch
-                    </button>
-                  </div>
+
+                  <button className={Styles.butt} type="submit">
+                    Get In Touch
+                  </button>
                 </form>
               </div>
             </div>

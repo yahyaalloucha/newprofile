@@ -58,7 +58,7 @@ class Footer extends Component {
                     className={Styles.img}
                   />
                 </a>
-                <a>
+                <a href="https://www.linkedin.com/in/yahya-alloucha-6016a7198/">
                   <img src={lin} className={Styles.img} />
                 </a>
 
