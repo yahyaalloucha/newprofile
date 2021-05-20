@@ -67,7 +67,7 @@ class Header extends Component {
                     Home
                   </HashLink>
 
-                  <HashLink smooth to="#About" className={Styles.links}>
+                  <HashLink smooth to="/#Aboutid" className={Styles.links}>
                     About
                   </HashLink>
 
