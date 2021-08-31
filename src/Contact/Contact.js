@@ -7,6 +7,7 @@ import facebook from "./facebookda.svg";
 import instagram from "./instada.svg";
 import linked from "./linkedindar.svg";
 import twiter from "./twitterda.svg";
+import { SuperSEO } from "react-super-seo";
 
 class Contact extends Component {
   render() {

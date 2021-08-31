@@ -11,6 +11,7 @@ import Whatido from "./Whatido/Whatido";
 import Aboutme from "./Aboutme/Aboutme";
 import Footer from "./Footer/Footer";
 import Contact from "./Contact/Contact";
+import { SuperSEO } from "react-super-seo";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CONTEX from "./CONTEX/CONTEX";
