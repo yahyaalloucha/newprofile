@@ -60,6 +60,27 @@ class App extends Component {
             backgroundColor: this.state.theme === "dark" ? "black" : "white",
           }}
         >
+          <SuperSEO
+  title="Home"
+  description="Welcome to my portfolio"
+  lang="en"
+  openGraph={{
+    ogImage: {
+      ogImage: "http://placekitten.com/1200/630",
+      ogImageAlt: "Kittens",
+      ogImageWidth: 1200,
+      ogImageHeight: 630,
+      
+    },
+  }}
+  twitter={{
+    twitterSummaryCard: {
+      summaryCardImage: "http://placekitten.com/1200/630",
+      summaryCardImageAlt: "Kittens",
+      summaryCardSiteUsername: "justinmahar",
+    },
+  }}
+/>
           <CONTEX.Provider
             value={{
               theme: this.state.theme,
@@ -117,6 +138,7 @@ class App extends Component {
                   <Contact />
                 </Route>
               </Switch>
+
             </switch>
           </CONTEX.Provider>
         </div>

@@ -19,6 +19,27 @@ class Contact extends Component {
           >
             <Header />
             <div className={Styles.containertow}>
+            <SuperSEO
+  title="Contact"
+  description="if you want to contact me"
+  lang="en"
+  openGraph={{
+    ogImage: {
+      ogImage: "http://placekitten.com/1200/630",
+      ogImageAlt: "Kittens",
+      ogImageWidth: 1200,
+      ogImageHeight: 630,
+      ogImageType: "image/jpeg",
+    },
+  }}
+  twitter={{
+    twitterSummaryCard: {
+      summaryCardImage: "http://placekitten.com/1200/630",
+      summaryCardImageAlt: "Kittens",
+      summaryCardSiteUsername: "justinmahar",
+    },
+  }}
+/>
               <div className={Styles.container_1}>
                 <h1
                   className={Styles.just}
