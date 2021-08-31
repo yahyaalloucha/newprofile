@@ -67,7 +67,7 @@ class App extends Component {
   lang="en"
   openGraph={{
     ogImage: {
-      ogImage: "http://placekitten.com/1200/630",
+      ogImage: "https://images.squarespace-cdn.com/content/v1/605a3c96f069ed0390eebc98/1616797838975-X0NW8M315DK5VW83VHIN/About_Hero.jpg",
       ogImageAlt: "Kittens",
       ogImageWidth: 1200,
       ogImageHeight: 630,
