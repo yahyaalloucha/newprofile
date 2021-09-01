@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import styles from "./Header_content.module.css";
-import Softoware from "./Softoware.png";
+import Softoware from "./Softoware.webp";
 import { HashLink } from "react-router-hash-link";
 import CONTEX from "../CONTEX/CONTEX";
 import { Link } from "react-router-dom";

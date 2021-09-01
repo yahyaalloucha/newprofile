@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 import Styles from "./Whatid.module.css";
 import Icon from "./Icon.svg";
-import web1 from "./web1png.png";
+import web1 from "./web1png.webp";
 import CONTEX from "../CONTEX/CONTEX";
 
 class Whatido extends Component {

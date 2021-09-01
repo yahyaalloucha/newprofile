@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import Styles from "./Header.module.css";
-import mylogo from "../yaya.jpg";
+import mylogo from "../yaya.webp";
 
 import { FiSun } from "react-icons/fi";
 import { BsMoon } from "react-icons/bs";
