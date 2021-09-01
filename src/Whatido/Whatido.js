@@ -33,7 +33,7 @@ class Whatido extends Component {
                 </p>
               </div>
               <div className={Styles.elementscard}>
-                <div className={Styles.elementscard1}>
+                <div className={Styles.elementscard2}>
                   <img src={Icon} alt="text" className={Styles.Icon} />
                   <h2 style={{ color: theme == "dark" ? "white" : "" }}>
                     UX/UI Design
@@ -48,7 +48,7 @@ class Whatido extends Component {
                     business goals.
                   </p>
                 </div>
-                <div className={Styles.elementscard2}>
+                <div className={Styles.elementscard1}>
                   <img src={Icon} alt="text" className={Styles.Icon} />
                   <h2 style={{ color: theme == "dark" ? "white" : "" }}>
                     Web Development
