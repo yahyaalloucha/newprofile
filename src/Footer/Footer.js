@@ -85,13 +85,8 @@ class Footer extends Component {
                     alt="my instagram"
                   />
                 </a>
-                <a>
-                  <img
-                    src={twit}
-                    className={Styles.img}
-                    alt="my twiter"
-                    href="https://twitter.com/?lang=en"
-                  />
+                <a href="https://twitter.com/?lang=en">
+                  <img src={twit} className={Styles.img} alt="my twiter" />
                 </a>
               </div>
             </div>

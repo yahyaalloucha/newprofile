@@ -108,7 +108,7 @@ class App extends Component {
                   title={Proj.title}
                   description={Proj.description}
                   atext={Proj.atext}
-                  link={Proj.linke}
+                  link={Proj.link}
                 />
                 <Projects
                   img={Proj1.imgUrl}
