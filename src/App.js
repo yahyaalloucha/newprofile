@@ -2,9 +2,9 @@ import "./App.css";
 import React from "react";
 import { Component } from "react";
 import Projects from "./Projects/Projects";
-import Landi from "./Landi.png";
-import lastproj from "./lastproj.jpg";
-import corona from "./coronastat.png";
+import Landi from "./Landi.webp";
+import lastproj from "./lastproj.webp";
+import corona from "./coronastat.webp";
 import Header from "./Header/Header";
 import Header_content from "./Header_content/Header_content";
 import Whatido from "./Whatido/Whatido";
@@ -62,24 +62,23 @@ class App extends Component {
           }}
         >
           <SuperSEO
-  title="Home"
-  description="Welcome to my portfolio"
-  lang="en"
-  openGraph={{
-    ogImage: {
-      ogImage: "https://images.squarespace-cdn.com/content/v1/605a3c96f069ed0390eebc98/1616797838975-X0NW8M315DK5VW83VHIN/About_Hero.jpg",
-      
-      
-    },
-  }}
-  twitter={{
-    twitterSummaryCard: {
-      summaryCardImage: "http://placekitten.com/1200/630",
-      summaryCardImageAlt: "Kittens",
-      summaryCardSiteUsername: "justinmahar",
-    },
-  }}
-/>
+            title="Home"
+            description="Welcome to my portfolio"
+            lang="en"
+            openGraph={{
+              ogImage: {
+                ogImage:
+                  "https://images.squarespace-cdn.com/content/v1/605a3c96f069ed0390eebc98/1616797838975-X0NW8M315DK5VW83VHIN/About_Hero.jpg",
+              },
+            }}
+            twitter={{
+              twitterSummaryCard: {
+                summaryCardImage: "http://placekitten.com/1200/630",
+                summaryCardImageAlt: "Kittens",
+                summaryCardSiteUsername: "justinmahar",
+              },
+            }}
+          />
           <CONTEX.Provider
             value={{
               theme: this.state.theme,
@@ -137,7 +136,6 @@ class App extends Component {
                   <Contact />
                 </Route>
               </Switch>
-
             </switch>
           </CONTEX.Provider>
         </div>
