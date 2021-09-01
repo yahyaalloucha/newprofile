@@ -55,7 +55,7 @@ class Header extends Component {
         <CONTEX.Consumer>
           {({ theme, onChangeTheme }) => (
             <Navbar expand="lg" className={Styles.nav}>
-              <img src={mylogo} className={Styles.mylogo}></img>
+              <img src={mylogo} className={Styles.mylogo} alt="my logo"></img>
 
               <Navbar.Toggle
                 aria-controls="basic-navbar-nav"

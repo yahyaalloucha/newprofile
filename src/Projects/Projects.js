@@ -5,7 +5,7 @@ import Styles from "./Projects.module.css";
 
 class Projects extends Component {
   render() {
-    const { img, title, description, atext, linke, buttonText, buttonUrl } =
+    const { img, title, description, atext, link, buttonText, buttonUrl } =
       this.props;
     return (
       <CONTEX.Consumer>
@@ -22,7 +22,7 @@ class Projects extends Component {
                 {title}
               </h1>
               <p className={Styles.p}>{description}</p>
-              <a href={linke} style={{ color: theme == "dark" ? "white" : "" }}>
+              <a href={link} style={{ color: theme == "dark" ? "white" : "" }}>
                 {atext}
               </a>
 

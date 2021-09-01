@@ -40,7 +40,7 @@ class App extends Component {
       description:
         "Website using this web site, you can get the last statistics about COVID 19.I built this project with React js.See project Statistics of COV19.",
       atext: "Visit Statistics of COV19",
-      linke: "https://gracious-jepsen-0f8026.netlify.app/",
+      link: "https://gracious-jepsen-0f8026.netlify.app/",
     };
 
     const Proj2 = {
@@ -49,7 +49,7 @@ class App extends Component {
       description:
         "Landie it's a website to buy a product, I worked on this project with technologies react js, react-bootstrap, and Figma.",
       atext: "Visit Landie",
-      linke: "https://flamboyant-almeida-af0295.netlify.app/",
+      link: "https://flamboyant-almeida-af0295.netlify.app/",
       buttonText: "go to mygithub",
       buttonUrl: "https://github.com/yahyaalloucha/",
     };

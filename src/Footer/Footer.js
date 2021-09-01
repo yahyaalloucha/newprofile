@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Component } from "react";
 import Styles from "./Footer.module.css";
 import mylogo from "../yaya.jpg";
@@ -36,24 +38,31 @@ class Footer extends Component {
             <div className={Styles.Line}></div>
             <div className={Styles.menu}>
               <div className={Styles.Lastmenu}>
-                <a
+                <HashLink
+                  smooth
+                  to="/#Home"
                   className={Styles.a}
                   style={{ color: theme === "dark" ? "white" : "" }}
                 >
                   Home
-                </a>
-                <a
+                </HashLink>
+
+                <HashLink
+                  smooth
+                  to="/#Aboutid"
                   className={Styles.a}
                   style={{ color: theme === "dark" ? "white" : "" }}
                 >
                   About
-                </a>
-                <a
+                </HashLink>
+                <Link
+                  smooth
+                  to="/Contact"
                   className={Styles.a}
                   style={{ color: theme === "dark" ? "white" : "" }}
                 >
                   Contact
-                </a>
+                </Link>
               </div>
               <div className={Styles.socialmedia}>
                 <a href="https://www.facebook.com/yahya.footballe">
@@ -77,7 +86,12 @@ class Footer extends Component {
                   />
                 </a>
                 <a>
-                  <img src={twit} className={Styles.img} alt="my twiter" />
+                  <img
+                    src={twit}
+                    className={Styles.img}
+                    alt="my twiter"
+                    href="https://twitter.com/?lang=en"
+                  />
                 </a>
               </div>
             </div>
