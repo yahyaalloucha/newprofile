@@ -25,7 +25,12 @@ class Footer extends Component {
               >
                 ©2020 Yourcompany
               </p>
-              <img src={mylogo} alt="text" className={Styles.img1}></img>
+              <img
+                src={mylogo}
+                alt="text"
+                className={Styles.img1}
+                alt="my logo"
+              ></img>
               <div className={Styles.button}>Contact now</div>
             </div>
             <div className={Styles.Line}></div>
@@ -56,10 +61,11 @@ class Footer extends Component {
                     src={fb}
                     href="https://www.facebook.com/yahya.footballe"
                     className={Styles.img}
+                    alt="my facebook"
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/yahya-alloucha-6016a7198/">
-                  <img src={lin} className={Styles.img} />
+                  <img src={lin} className={Styles.img} alt="my linked" />
                 </a>
 
                 <a href="https://www.instagram.com/yahya_salhi_01/">
@@ -67,10 +73,11 @@ class Footer extends Component {
                     src={inst}
                     alt="https://www.instagram.com/yahya_salhi_01/"
                     className={Styles.img}
+                    alt="my instagram"
                   />
                 </a>
                 <a>
-                  <img src={twit} className={Styles.img} />
+                  <img src={twit} className={Styles.img} alt="my twiter" />
                 </a>
               </div>
             </div>

@@ -19,7 +19,7 @@ class Header extends Component {
           {({ theme, onChangeTheme }) => (
             <div className={Styles.container}>
               <div className={Styles.logo}>
-                <img src={mylogo} className={Styles.mylogo}></img>
+                <img src={mylogo} className={Styles.mylogo} alt="my logo"></img>
               </div>
               <div className={Styles.navlinks}>
                 <HashLink smooth to="/#Home" className={Styles.links}>

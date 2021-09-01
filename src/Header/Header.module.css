@@ -25,6 +25,7 @@
   padding-top: 2vw;
   width: 100px;
   height: 100px;
+  object-fit: contain;
 }
 .button {
   color: #ffffff;
